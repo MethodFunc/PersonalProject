@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Tarkov_randomItems
 {
@@ -11,10 +11,11 @@ namespace Tarkov_randomItems
 
             string guns_type = gd.guns_type();
             string guns_kind = gd.guns_kind(guns_type);
+            string ammo_type = ad.ammo_types(guns_kind);
             Console.WriteLine(guns_type);
             Console.WriteLine(guns_kind);
+            Console.WriteLine(ammo_type);
 
-            ad.ammo_types();
         }
     }
 }
