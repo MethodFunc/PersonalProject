@@ -33,7 +33,7 @@ namespace Tarkov_randomItems
 
 
         string[] shotgun = new string[] { "M870", "MP-133", "MP-153", "Saiga-12" };  // 12x70mm
-        string toz = "toz"; // 20x70mm
+        string toz = "TOZ-106"; // 20x70mm
         public void ammo_types(string gkind)
         {
             int i = 0;
@@ -55,11 +55,11 @@ namespace Tarkov_randomItems
                     {
                         Console.WriteLine("9x19mm Parabellum");
                     }
-                    else if (j == 3 && gkind == smg_cartridges[j][0])
+                    else if (j == 3 && gkind == smg_cartridges[j][i])
                     {
                         Console.WriteLine("5.7x28mm FN");
                     }
-                    else if (j == 4 && gkind == smg_cartridges[j][0])
+                    else if (j == 4 && gkind == smg_cartridges[j][i])
                     {
                         Console.WriteLine("7.62x25mm Tokarev");
                     }
