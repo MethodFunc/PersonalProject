@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Text;
@@ -44,7 +44,7 @@ namespace Tarkov_randomItems
 
             else if (typei == types[3])
             {
-                string[] smg = new string[13] { "MP5", "MP5K-N", "MP7A1", "MP7A2", "MP9", "MP9-N", "MPX", "P90", "PP-19-01 Vityaz-SN", "PP-91 \"Klin\" ", "PP-91 \"Kedr\"", "PP-91-01 \"Kedr-B\"", "Saiga-9" };
+                string[] smg = new string[14] { "MP5", "MP5K-N", "MP7A1", "MP7A2", "MP9", "MP9-N", "MPX", "P90", "PP-19-01 Vityaz-SN", "PP-91 \"Klin\"", "PP-91 \"Kedr\"", "PP-91-01 \"Kedr-B\"", "Saiga-9" , "PPSH-41"};
                 kind_output = smg[r.Next(0, smg.Length)];
             }
 
