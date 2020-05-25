@@ -60,7 +60,7 @@ namespace Tarkov_randomItems
             }
             else if (typei == types[6])
             {
-                string[] sr = new string[] { "DVL-10", "M700", "Mosin", "Mosin Inf.", "SV-98", "T-5000", "VPO-215" };
+                string[] sr = new string[7] { "DVL-10", "M700", "Mosin", "Mosin Inf.", "SV-98", "T-5000", "VPO-215" };
                 kind_output = sr[r.Next(0, sr.Length)];
             }
 
