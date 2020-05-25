@@ -34,10 +34,11 @@ namespace Tarkov_randomItems
 
         string[] shotgun = new string[] { "M870", "MP-133", "MP-153", "Saiga-12" };  // 12x70mm
         string toz = "TOZ-106"; // 20x70mm
-        public void ammo_types(string gkind)
+        public string ammo_types(string gkind)
         {
             int i = 0;
             int j = 0;
+            string ammo_type = "";
 
             for (j = 0; j < smg_cartridges.Length; j++)
             {
@@ -45,23 +46,23 @@ namespace Tarkov_randomItems
                 {
                     if (j == 0 && gkind == smg_cartridges[j][i])
                     {
-                        Console.WriteLine("9x18mm Makarov");
+                        ammo_type = "9x18mm Makarov";
                     }
                     else if (j == 1 && gkind == smg_cartridges[j][i])
                     {
-                        Console.WriteLine("9x19mm Parabellum");
+                        ammo_type = "9x19mm Parabellum";
                     }
                     else if (j == 2 && gkind == smg_cartridges[j][i])
                     {
-                        Console.WriteLine("9x19mm Parabellum");
+                        ammo_type = "9x19mm Parabellum";
                     }
                     else if (j == 3 && gkind == smg_cartridges[j][i])
                     {
-                        Console.WriteLine("5.7x28mm FN");
+                        ammo_type = "5.7x28mm FN";
                     }
                     else if (j == 4 && gkind == smg_cartridges[j][i])
                     {
-                        Console.WriteLine("7.62x25mm Tokarev");
+                        ammo_type = "7.62x25mm Tokarev";
                     }
                 }
             }
@@ -72,51 +73,53 @@ namespace Tarkov_randomItems
                 {
                     if (j == 0 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("5.45x39mm");
+                        ammo_type = "5.45x39mm";
                     }
                     else if (j == 1 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("5.56x45mm NATO");
+                        ammo_type = "5.56x45mm NATO";
                     }
                     else if (j == 2 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("7.62x39mm");
+                        ammo_type = "7.62x39mm";
                     }
                     else if (j == 3 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("7.62x51mm NATO");
+                        ammo_type = "7.62x51mm NATO";
                     }
                     else if (j == 4 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("7.62x54mmR");
+                        ammo_type = "7.62x54mmR";
                     }
                     else if (j == 5 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("9x39mm");
+                        ammo_type = "9x39mm";
                     }
                     else if (j == 6 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine(".366 TKM");
+                        ammo_type = ".366 TKM";
                     }
                     else if (j == 7 && gkind == rifle_cartridges[j][i])
                     {
-                        Console.WriteLine("12.7x55mm STs-130");
+                        ammo_type = "12.7x55mm STs-130";
                     }
                 }
             }
 
             for (i = 0; i < shotgun.Length; i++)
             {
-                if(gkind == shotgun[i])
+                if (gkind == shotgun[i])
                 {
-                    Console.WriteLine("12x70mm");
+                    ammo_type = "12x70mm";
                 }
             }
 
-            if(gkind == toz)
+            if (gkind == toz)
             {
-                Console.WriteLine("20x70mm");
+                ammo_type = "20x70mm";
             }
+
+            return ammo_type;
         }
     }
 }
