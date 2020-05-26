@@ -121,6 +121,26 @@ namespace Tarkov_randomItems
 
             return ammo_type;
         }
+        
+        public string ammo_kinds(string ammo)
+		{
+			string ammo_result = "";
+			
+			if(ammo == ammo_type[0])
+			{
+				string[] ammos = new string[9] {"5.56x45 mm Warmage", "5.56x45 mm 55 HP", "5.56x45 mm Mk 255 Mod 0", "5.56x45 mm M856", "5.56x45 mm 55 FMJ", "5.56x45 mm M855", "5.56x45 mm M856A1", "5.56x45 mm M855A1", "5.56x45 mm M995"};
+				ammo_result = ammos[r.next(0,ammos.Length)];
+			}
+			
+			/*
+			if(ammo == "9x18mm Makarov")
+			{
+				string[] ammos = new string[14] {"9x18 mm PM SP8 gzh", "9x18 mm PM SP7 gzh", "9x18 mm PM PSV", "9x18 mm PM 9 P gzh", "9x18 mm PM PSO gzh", "9x18 mm PM PS gs PPO", "9x18 mm PM PRS gs", "9x18 mm PM PPe gzh", "9x18 mm PM PPT gzh", "9x18 mm PM Pst gzh", "9x18 PM mm RG028 gzh", "9x18 mm PM 9 BZT gzh", "9x18 mm PM PBM", "9x18 mm PM PMM"}
+				ammo_result = ammos[r.next(0,13)];
+			}
+            */
+			return ammo_result;
+		}
     }
 }
 
