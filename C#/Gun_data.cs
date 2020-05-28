@@ -9,7 +9,7 @@ namespace Tarkov_randomItems
     class Gun_data
     {
         Random r = new Random();
-        string[] types = new string[7] { "Assault rifles", "Assault carbines", "Light machine guns", "Submachine guns", "Shotguns", "Designated marksman rifles", "Sniper rifles" };
+        string[] types = new string[7] { "Assault rifles", "Assault carbines", "Light machine guns", "Submachine guns", "Shotguns", "Designated marksman rifles", "Sniper rifles" , "Pistol"};
 
         public string guns_type()
         {
@@ -63,6 +63,11 @@ namespace Tarkov_randomItems
                 string[] sr = new string[7] { "DVL-10", "M700", "Mosin", "Mosin Inf.", "SV-98", "T-5000", "VPO-215" };
                 kind_output = sr[r.Next(0, sr.Length)];
             }
+            
+            else if (typei == types[7)
+           {
+               string[] pistol = new string[] {}
+           }
 
             return kind_output;
 
